@@ -38,7 +38,6 @@ tags:
 > The impact of task formulation: From task formulations described in Section 3, observe that the Wiki-dataset defines the class Toxic in a general way. The class Founta-Abusive is also a general formulation of offensive behaviour. The similarity of these two definitions is reflected clearly in our results.
 - 흥미로운 분석은 Formulation에 대한 것이다. 먼저 Wiki dataset의 Tosic class에 대한 정의는 다음과 같다 : 'The class Toxic comprises rude, hateful, aggressive, disrespectful or unreasonable comments that are likely to make a person leave a conversation'.
 - 그런데 이것이, Waseem 데이터셋의 Sexist, Racist class를 분류하기에는 다소 일반적인 정의라는 것이다. 
----
 
 ## Impact of Data Size on Generalizability
 #data-size
