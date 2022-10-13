@@ -1,5 +1,5 @@
 ---
-title: "Algorithm - Dynamic Programming"
+title: "⚙️ Dynamic Programming"
 tags :
 - algorithm 
 - dynamic-programming
@@ -16,7 +16,7 @@ tags :
 위 조건을 만족하는 대표적인 문제가 **피보나치 수열** 문제이다. 피보나치 수열은 다음과 같은 점화식을 만족하는 수열이다.
 
 $$
-a_n=a_{n−1} + a_{n−2} ,\ a_1=1 ,\ a_2=1
+a_n=a_{n−1} + a_{n−2} ,a_1=1 , a_2=1
 $$
 
 다이나믹 프로그래밍의 포인트는 바로 한 번 결과를 수행한 것을 메모리에 저장해 놓고 다음에 똑같은 결과가 필요하면 그 때 다시 연산하지 않고 메모리에 저장된 그 값을 가져와 쓰는 것이다.

@@ -1,5 +1,5 @@
 ---
-title: "Algorithm - Two Pointers"
+title: "⚙️ Two Pointers"
 tags :
 - algorithm
 - two-pointers
