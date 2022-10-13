@@ -11,3 +11,4 @@ enableToc: false
 
 ###  [👩‍💻 Coding Test](notes/coding-test.md)
 ###  [📑 Paper Review](notes/paper-review.md)
+### [⚙️ Algorithms](notes/Algorithms.md)

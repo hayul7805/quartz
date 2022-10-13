@@ -14,3 +14,4 @@ title: "👩‍💻 Coding Test"
 - [다음 큰 숫자](notes/다음%20큰%20숫자.md)
 - [영어 끝말잇기](notes/영어%20끝말잇기.md)
 - [구명보트](notes/구명보트.md)
+- [멀리뛰기](notes/멀리뛰기.md)

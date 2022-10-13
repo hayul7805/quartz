@@ -99,6 +99,6 @@ start를 한 칸 옮겼는데, 동시에 S = 5인 경우를 만났다. 이때 �
   - 2096 : 내려가기
   - 2293 : 동전1
 
-> [!info]
-> [Reference](https://github.com/WooVictory/Ready-For-Tech-Interview/blob/master/Algorithm/투포인터%20알고리즘.md)
-> 
+---
+### Reference
+- https://github.com/WooVictory/Ready-For-Tech-Interview/blob/master/Algorithm/투포인터%20알고리즘.md
