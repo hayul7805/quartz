@@ -1,5 +1,5 @@
 ---
-title: "지도학습 ( Supervised Learning )"
+title: "지도학습 (Supervised Learning)"
 tags :
 - ML 
 ---

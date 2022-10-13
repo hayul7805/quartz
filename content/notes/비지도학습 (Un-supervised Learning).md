@@ -1,5 +1,5 @@
 ---
-title: "비지도학습 ( Un-supervised Learning )"
+title: "비지도학습 (Un-supervised Learning)"
 tags : 
 - ML
 ---
