@@ -20,7 +20,7 @@ tags :
 	- Categorical Gradient Boosting
 - Natural Gradient Boosting
 
-> [!note]  
+> [!note]
 > 일반적으로 **Decision Tree & Logistic Regression** 이 설명력이 좋아서 자주 쓰인다. 그러나 최근에는 **Gradient Boosting** 계열도 자주 쓰이고 있다.
 
 ## ML system 종류의 대표 구분 3가지
