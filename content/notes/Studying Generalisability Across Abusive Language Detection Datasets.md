@@ -8,7 +8,8 @@ title: "Studying Generalisability Across Abusive Language Detection Datasets"
 
 ## Previous Work
 
-> Abusive language detection has served as an umbrella term for a wide variety of subtasks. Research in the field has typically focused on a particular subtask: Hate Speech (Davidson et al., 2017; Founta et al., 2018; Gao and Huang, 2017; Golbeck et al., 2017), Sexism/Racism (Waseem and Hovy, 2016), Cyberbullying (Xu et al., 2012; Dadvar et al., 2013), Trolling and Aggression (Kumar et al., 2018a), and so on. Datasets for these tasks have been collected from various social media platforms, such as Twitter (Waseem and Hovy, 2016; Davidson et al., 2017; Founta et al., 2018; Burnap and Williams, 2015; Golbeck et al., 2017), Facebook (Kumar et al., 2018a), Instagram (Hosseinmardi et al., 2015; Zhong et al., 2016), Yahoo! (Nobata et al., 2016; Djuric et al., 2015; Warner and Hirschberg, 2012), YouTube (Dinakar et al., 2011), and Wikipedia (Wulczyn et al., 2017), with annotation typically carried out on crowdsourcing platforms such as CrowdFlower (Figure Eight)1 and Amazon Mechanical Turk.
+> Abusive language detection has served as an umbrella term for a wide variety of subtasks. Research in the field has typically focused on a particular subtask: Hate Speech (Davidson et al., 2017; Founta et al., 2018; Gao and Huang, 2017; Golbeck et al., 2017), Sexism/Racism (Waseem and Hovy, 2016), Cyberbullying (Xu et al., 2012; Dadvar et al., 2013), Trolling and Aggression (Kumar et al., 2018a), and so on. 
+> Datasets for these tasks have been collected from various social media platforms, such as Twitter (Waseem and Hovy, 2016; Davidson et al., 2017; Founta et al., 2018; Burnap and Williams, 2015; Golbeck et al., 2017), Facebook (Kumar et al., 2018a), Instagram (Hosseinmardi et al., 2015; Zhong et al., 2016), Yahoo! (Nobata et al., 2016; Djuric et al., 2015; Warner and Hirschberg, 2012), YouTube (Dinakar et al., 2011), and Wikipedia (Wulczyn et al., 2017), with annotation typically carried out on crowdsourcing platforms such as CrowdFlower (Figure Eight)1 and Amazon Mechanical Turk.
 - Abusive language detection에 대한 해외 연구 레퍼런스가 잘 설명되어 있다.
 
 > In the ‘OffensEval’ shared task (Zampieri et al., 2019b), the use of contextual embeddings such as BERT (Devlin et al., 2018) and ELMo (Peters et al., 2018) exhibited the best results.
@@ -43,6 +44,13 @@ title: "Studying Generalisability Across Abusive Language Detection Datasets"
 > Considerable performance drops can be observed when going from a large training dataset to a small test set (i.e., Founta et al.’s results when tested on the Waseem and Hovy dataset) and vice versa. This is in line with a similar conclusion by Karan and Šnajder(2018). 
 - 큰 데이터셋부터 작은 데이터셋으로 갈 때 퍼포먼스 하락이 보인다. 
 
-> The most interesting observation is that **datasets with larger percentages of positive samples tend to** **generalise better than datasets with fewer positive samples**, in particular when **tested against dissimilar datasets**. For example, we see that the mod- els trained on the Davidson et al. dataset, which contains a majority of offensive tags, perform well when tested on the Founta et al. dataset, which contains a majority of non-offensive tags.
+> The most interesting observation is that **datasets with larger percentages of positive samples tend to** **generalise better than datasets with fewer positive samples**, in particular when **tested against dissimilar datasets**. For example, we see that the models trained on the Davidson et al. dataset, which contains a majority of offensive tags, perform well when tested on the Founta et al. dataset, which contains a majority of non-offensive tags.
 - 가장 흥미로운 관찰은 양성 샘플의 비율이 큰 데이터 세트가 특히 다른 데이터 세트에 대해 테스트할 때 양성 샘플이 적은 데이터 세트보다 더 잘 일반화되는 경향이 있다는 것이다. 예를 들어, 대다수의 공격 태그를 포함하는 Davidson 등 데이터 세트에 대해 훈련된 모델은 대다수의 비공격 태그를 포함하는 Founta 등 데이터 세트에서 테스트될 때 성능이 우수하다는 것을 알 수 있다.
 - 내 연구도 이런 것이 있나 확인해보자. 
+
+## Discussion and Conclusion
+
+> Second, experiments showing that datasets with larger percentages of positive samples generalise better than datasets with fewer positive samples when tested against a dissimilar dataset (at least within the same platform, e.g., Twitter), which indicates that a more balanced dataset is healthier for generalisation.
+
+> **An overall conclusion is that the data is more important than the model when tackling Abusive Language Detection.**
+- 데이터, 데이터! 결국은 데이터의 중요성을 말하며 이 논문은 끝을 낸다. 

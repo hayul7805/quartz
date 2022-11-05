@@ -4,9 +4,12 @@ tags :
 - generalization
 - key-observation 
 ---
+
 > [!info] Reference  
 > 
 > Yin, W., & Zubiaga, A. (2021). Towards generalisable hate speech detection: a review on obstacles and solutions. _PeerJ Computer Science_, _7_, e598.
+
+---
 
 ## Generalisation
 

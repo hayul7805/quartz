@@ -3,8 +3,12 @@ title: "On Cross-Dataset Generalization in Automatic Detection of Online Abuse"
 tags:
 - generalization
 ---
->[!info] Reference
+
+>[!info] Reference  
+>
 >Nejadgholi, I., & Kiritchenko, S. (2020). On cross-dataset generalization in automatic detection of online abuse. _arXiv preprint arXiv:2010.07414_.
+
+---
 
 ## Research Questions
 

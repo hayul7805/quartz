@@ -10,5 +10,5 @@ tags :
 3. Logistic Regression
 4. Support Vector Machines (SVM)
 5. Decision Tree / Random Forest
-6. Gradient Boosting Algorithms (XGB, LGB, CatGB, NGB 등)
+6. Gradient Boosting Algorithms ([XGB](notes/XGB%20Modeling.md), LGB, CatGB, NGB 등)
 7. Neural Networks

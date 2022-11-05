@@ -15,7 +15,7 @@ tags :
 	- Random Forest
 	- Extra Trees Boosting
 - Decision Tree 기반 Gradient Boosting 모형
-	- Extreme Gradient Boosting  
+	- [Extreme Gradient Boosting](notes/XGB%20Modeling.md)  
 	- Light Gradient Boosting  
 	- Categorical Gradient Boosting
 - Natural Gradient Boosting
