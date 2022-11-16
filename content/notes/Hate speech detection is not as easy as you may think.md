@@ -15,6 +15,7 @@ title: "Hate speech detection is not as easy as you may think"
 - **그럼에도 불구하고 결과 모델이 구축된 데이터 수집을 넘어, 결과 모델의 일반화 정도를 결정하는 데에는 몇 가지 연구만이 있다.** 또한, 현재 작업을 조사하는 최근 문헌에서도 최첨단 기술을 보다 보수적이고 신중한 관점에서 바라본다.
 
 > [!note] Aim of this paper  
+>   
 > "(...) measure how these models would perform on similar yet different datasets."
 
 - 비슷하지만 다른 데이터셋. 거기에서 모델의 성능을 보는 것. 이게 핵심이다.

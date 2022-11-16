@@ -20,7 +20,8 @@ tags :
 	- Categorical Gradient Boosting
 - Natural Gradient Boosting
 
-> [!note]
+> [!note]  
+>   
 > 일반적으로 **Decision Tree & Logistic Regression** 이 설명력이 좋아서 자주 쓰인다. 그러나 최근에는 **Gradient Boosting** 계열도 자주 쓰이고 있다.
 
 ## ML system 종류의 대표 구분 3가지
@@ -43,11 +44,24 @@ tags :
 
 ## ML 문제 해결 순서
 
-1. 학습 데이터와 테스트 데이터의 분포가 동일한지 여부를 파악한다
-2. 활용할 모델 알고리즘들을 정한다
-3. Hyperparameter Tuning Case를 정의한다
-4. `Cross Validation`기반 학습을 진행한다 ( 모든 학습 데이터를 학습과 검증에 다 활용 )
-5. 유의미한 결과가 나오는 알고리즘 및 Hyperparameter Case를 기반으로 학습 데이터 전체를 학습한다
-6. 테스트 결과를 확인한다
 
-## [Model tuning](notes/Model%20tuning.md)
+```mermaid
+stateDiagram-v2
+	Data_distribution --> Models
+	Models --> Hyper_parameter_tuning
+	Models --> Cross_validation
+	Hyper_parameter_tuning --> Training
+	Cross_validation --> Training
+	Training --> Testing
+```
+
+1. [EDA & Visualization](notes/EDA%20&%20Visualization.md)
+	1. 학습 데이터와 테스트 데이터의 분포가 동일한지 여부를 파악한다
+2. 활용할 모델 알고리즘들을 정한다
+3. [Hyper parameter tuning](notes/Hyper%20parameter%20tuning.md)을 수행한다
+4. `Cross Validation` 기반 학습을 진행한다. 
+5. 유의미한 결과가 나오는 알고리즘 및 Hyper parameter Case를 기반으로 학습 데이터 전체를 학습한다.
+6. 테스트 결과를 확인한다.
+
+## Examples
+

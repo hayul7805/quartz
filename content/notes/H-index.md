@@ -39,8 +39,8 @@ def solution(citations):
         return len(citations)
 ```
 
->[!warning]   
->
+>[!warning] Warning  
+>   
 >이 문제에서 h는 꼭 citations 안에 있지 않다! 
 >예를 들어, citations = [6, 5, 5, 5, 3, 2, 1, 0] 이면, h = 4이다.
 
