@@ -18,15 +18,11 @@ from sklearn.model_selection import GridSearchCV
   
 
 param_grid = [
-
 # try 12 (3×4) combinations of hyperparameters
-
 {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
 
 # then try 6 (2×3) combinations with bootstrap set as False
-
-{'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
-
+{'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]}
 ]
 
   
@@ -34,15 +30,11 @@ param_grid = [
 forest_reg = RandomForestRegressor(random_state=42)
 
 # train across 5 folds, that's a total of (12+6)*5=90 rounds of training
-
 grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
-
-scoring='neg_mean_squared_error',
-
-return_train_score=True)
+			scoring='neg_mean_squared_error',
+			return_train_score=True)
 
 grid_search.fit(housing_prepared, housing_labels)
-
 ```
 
 `RandomForestRegressor`에 `GridSearchCV `적용 후 하이퍼파라미터 별 평가 점수 확인
@@ -51,8 +43,7 @@ grid_search.fit(housing_prepared, housing_labels)
 cvres = grid_search.cv_results_
 
 for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
-
-print(np.sqrt(-mean_score), params)
+	print(np.sqrt(-mean_score), params)
 ```
 
 ```
@@ -68,28 +59,19 @@ print(np.sqrt(-mean_score), params)
 	2. 반복 횟수를 단순히 조절하는 것 만으로도 하이퍼파라미터에 투입할 컴퓨팅 자원을 제어할 수 있음
 
 ```python
-
 from sklearn.model_selection import RandomizedSearchCV
-
 from scipy.stats import randint
 
-  
-
 param_distribs = {
-
 'n_estimators': randint(low=1, high=200),
-
 'max_features': randint(low=1, high=8),
-
 }
-
-  
 
 forest_reg = RandomForestRegressor(random_state=42)
 
-rnd_search = RandomizedSearchCV(forest_reg, param_distributions=param_distribs,
-
-n_iter=10, cv=5, scoring='neg_mean_squared_error', random_state=42)
+rnd_search = RandomizedSearchCV(forest_reg, param_distributions = param_distribs, n_iter=10, cv=5,
+				scoring='neg_mean_squared_error',
+				random_state=42)
 
 rnd_search.fit(housing_prepared, housing_labels)
 ```
@@ -98,8 +80,7 @@ rnd_search.fit(housing_prepared, housing_labels)
 cvres = rnd_search.cv_results_
 
 for mean_score, params in zip(cvres["mean_test_score"], cvres["params"]):
-
-print(np.sqrt(-mean_score), params)
+	print(np.sqrt(-mean_score), params)
 
 >>>
 49462.596134607906 {'max_features': 7, 'n_estimators': 180} 51676.97211565583 {'max_features': 5, 'n_estimators': 15} 50827.83871022729 {'max_features': 3, 'n_estimators': 72} 51117.698297994146 {'max_features': 5, 'n_estimators': 21} 49585.185219390754 {'max_features': 7, 'n_estimators': 122} 50836.040148806715 {'max_features': 3, 'n_estimators': 75} 50746.890270152086 {'max_features': 3, 'n_estimators': 88} 49788.190631507045 {'max_features': 5, 'n_estimators': 100} 50574.565725719985 {'max_features': 3, 'n_estimators': 150} 65153.787556165735 {'max_features': 5, 'n_estimators': 2}
@@ -107,6 +88,7 @@ print(np.sqrt(-mean_score), params)
 
 위와 같이 랜덤 탐색을 이용하는 게 더 나은 결과가 나올 수 있다. 
 
+---
 
 > [!info] Useful info  
 >   
@@ -117,22 +99,13 @@ print(np.sqrt(-mean_score), params)
 ```python
 final_model = grid_search.best_estimator_
 
-  
-
 X_test = strat_test_set.drop("median_house_value", axis=1)
-
 y_test = strat_test_set["median_house_value"].copy()
-
-  
-
 X_test_prepared = full_pipeline.transform(X_test)
 
 final_predictions = final_model.predict(X_test_prepared)
 
-  
-
 final_mse = mean_squared_error(y_test, final_predictions)
-
 final_rmse = np.sqrt(final_mse)
 ```
 
@@ -146,16 +119,9 @@ final_rmse
 ```python
 from scipy import stats
 
-  
-
 confidence = 0.95
-
 squared_errors = (final_predictions - y_test) ** 2
-
-np.sqrt(stats.t.interval(confidence, len(squared_errors) - 1,
-
-loc=squared_errors.mean(),
-
+np.sqrt(stats.t.interval(confidence, len(squared_errors) - 1,loc=squared_errors.mean(),
 scale=stats.sem(squared_errors)))
 ```
 
