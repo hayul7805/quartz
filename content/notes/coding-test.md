@@ -18,8 +18,8 @@ title: "👩‍💻 Coding Test"
 - [두 큐 합 같게 만들기](notes/두%20큐%20합%20같게%20만들기.md) #Kakao 
 - [H-index](notes/H-index.md)
 - [숫자 카드 나누기](notes/숫자%20카드%20나누기.md)
-- [타겟 넘버](notes/타겟%20넘버.md)
 - [스킬트리](notes/스킬트리.md)
+- [타겟 넘버](notes/타겟%20넘버.md)
 
 ### Level 3
 - [정수 삼각형](notes/정수%20삼각형.md)
