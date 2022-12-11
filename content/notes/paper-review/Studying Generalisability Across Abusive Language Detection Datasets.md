@@ -33,7 +33,7 @@ title: "Studying Generalisability Across Abusive Language Detection Datasets"
 
 > The best models used a learning rate of e−5 and batch size 32 with varying maximum sequence lengths between 60 and 70. Other parameters worth mentioning are the number of epochs and the Linear Warm-up Proportion.
 - 모델 하이퍼파라미터의 경우에는 이렇게 표현하면 된다.
-- 어라, 그런데 이거 보다보니 [On Cross-Dataset Generalization in Automatic Detection of Online Abuse](notes/On%20Cross-Dataset%20Generalization%20in%20Automatic%20Detection%20of%20Online%20Abuse.md) 이랑 설명이 똑같다. 
+- 어라, 그런데 이거 보다보니 [On Cross-Dataset Generalization in Automatic Detection of Online Abuse](notes/paper-review/On%20Cross-Dataset%20Generalization%20in%20Automatic%20Detection%20of%20Online%20Abuse.md) 이랑 설명이 똑같다. 
 
 ![Table 1: Overview of the datasets by Davidson et al., Founta et al., Waseem and Hovy, and Zampieri et al.](Datasets-overview.png)
 - 전체 데이터셋의 개요는 위 그림과 같다. 

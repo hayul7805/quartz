@@ -21,7 +21,7 @@ tags :
 
 #key-observation 
 >Recent research has raised concerns on the generalisability of existing models (Swamy, Jamatia & Gambäck, 2019). Despite their impressive performance on their respective test sets, **the performance significantly dropped when the models are applied to a different hate speech dataset.** This means that the assumption that test data of existing datasets represent the distribution of future cases is not true, and that **the generalisation performance of existing models have been severely overestimated** (Arango, Prez & Poblete, 2020). This lack of generalisability undermines the practical value of these hate speech detection models.
-- 최근 연구는 기존 모델의 일반화 가능성에 대한 우려를 제기했다(Swamy, Jamatia & Gambeck, 2019 : [Studying Generalisability Across Abusive Language Detection Datasets](notes/Studying%20Generalisability%20Across%20Abusive%20Language%20Detection%20Datasets.md)).  **각각의 테스트 세트에서 인상적인 성능에도 불구하고 모델이 다른 혐오 음성 데이터 세트에 적용될 때 성능이 크게 떨어졌다.** 이는 기존 데이터 세트의 테스트 데이터가 미래의 사례 분포를 나타낸다는 가정이 사실이 아니며, **기존 모델의 일반화 성능이 심각하게 과대 평가되었다는 것을 의미한다**(Arango, Pres & Poblete, 2020 : [Hate speech detection is not as easy as you may think](notes/Hate%20speech%20detection%20is%20not%20as%20easy%20as%20you%20may%20think.md)). 이러한 일반성의 부족은 이러한 혐오표현 탐지 모델의 실질적인 가치를 훼손한다.
+- 최근 연구는 기존 모델의 일반화 가능성에 대한 우려를 제기했다(Swamy, Jamatia & Gambeck, 2019 : [Studying Generalisability Across Abusive Language Detection Datasets](notes/paper-review/Studying%20Generalisability%20Across%20Abusive%20Language%20Detection%20Datasets.md)).  **각각의 테스트 세트에서 인상적인 성능에도 불구하고 모델이 다른 혐오 음성 데이터 세트에 적용될 때 성능이 크게 떨어졌다.** 이는 기존 데이터 세트의 테스트 데이터가 미래의 사례 분포를 나타낸다는 가정이 사실이 아니며, **기존 모델의 일반화 성능이 심각하게 과대 평가되었다는 것을 의미한다**(Arango, Pres & Poblete, 2020 : [Hate speech detection is not as easy as you may think](notes/paper-review/Hate%20speech%20detection%20is%20not%20as%20easy%20as%20you%20may%20think.md)). 이러한 일반성의 부족은 이러한 혐오표현 탐지 모델의 실질적인 가치를 훼손한다.
 
 >[!note] Note  
 >
@@ -46,7 +46,7 @@ tags :
 - `Wiegand, Ruppenhofer & Kleinbauer (2019)` 연구에서 언급한 바와 같이, 조금이라도 더 일반화가 잘 되는 모델을 만드려면 sampling을 덜 치우치게 해주어야 한다. 훈련시 `sampler`를 잘 만들어야겠다.
 
 > Another way of looking at generalisation and similarity is by comparing differences between individual classes across datasets (Nejadgholi & Kiritchenko, 2020; Fortuna, Soler & Wanner, 2020; Fortuna, Soler-Company & Wanner, 2021), as opposed to comparing datasets as a whole.
-- 이 논문에서도 class 개별로 비교하라고 주장하는구나. [On Cross-Dataset Generalization in Automatic Detection of Online Abuse](notes/On%20Cross-Dataset%20Generalization%20in%20Automatic%20Detection%20of%20Online%20Abuse.md) 에서 주장하는 것과 맞물린다. 
+- 이 논문에서도 class 개별로 비교하라고 주장하는구나. [On Cross-Dataset Generalization in Automatic Detection of Online Abuse](notes/paper-review/On%20Cross-Dataset%20Generalization%20in%20Automatic%20Detection%20of%20Online%20Abuse.md) 에서 주장하는 것과 맞물린다. 
 
 ## OBSTACLES TO GENERALISABLE HATE SPEECH DETECTION
 

@@ -15,7 +15,7 @@ tags :
 	- Random Forest
 	- Extra Trees Boosting
 - Decision Tree 기반 Gradient Boosting 모형
-	- [Extreme Gradient Boosting](notes/XGB%20Modeling.md)  
+	- [Extreme Gradient Boosting](notes/ml/XGB%20Modeling.md)  
 	- Light Gradient Boosting  
 	- Categorical Gradient Boosting
 - Natural Gradient Boosting
@@ -27,10 +27,10 @@ tags :
 ## ML system 종류의 대표 구분 3가지
 
 **1. 사람의 감독하에 프로그램이 훈련하는 것인지 여부** 
-- [지도학습 (Supervised Learning)](notes/지도학습%20(Supervised%20Learning).md)
+- [지도학습 (Supervised Learning)](notes/ml/지도학습%20(Supervised%20Learning).md)
 	- 분류 (Classification)
 	- 회귀 (Regression)
-- [비지도학습 (Un-supervised Learning)](notes/비지도학습%20(Un-supervised%20Learning).md)
+- [비지도학습 (Un-supervised Learning)](notes/ml/비지도학습%20(Un-supervised%20Learning).md)
 - 준지도학습 (Semi-supervised Learning)
 - 강화학습 (Reinforcement Learning)
 
@@ -55,10 +55,10 @@ stateDiagram-v2
 	Training --> Testing
 ```
 
-1. [EDA & Visualization](notes/EDA%20&%20Visualization.md)
+1. [EDA & Visualization](notes/ml/EDA%20&%20Visualization.md)
 	1. 학습 데이터와 테스트 데이터의 분포가 동일한지 여부를 파악한다
 2. 활용할 모델 알고리즘들을 정한다
-3. [Hyper parameter tuning](notes/Hyper%20parameter%20tuning.md)을 수행한다
+3. [Hyper parameter tuning](notes/ml/Hyper%20parameter%20tuning.md)을 수행한다
 4. `Cross Validation` 기반 학습을 진행한다. 
 5. 유의미한 결과가 나오는 알고리즘 및 Hyper parameter Case를 기반으로 학습 데이터 전체를 학습한다.
 6. 테스트 결과를 확인한다.
