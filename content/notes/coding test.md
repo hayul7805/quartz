@@ -22,6 +22,7 @@ title: "👩‍💻 Coding Test"
 - [타겟 넘버](notes/coding%20test/타겟%20넘버.md)
 - [게임 맵 최단거리](notes/coding%20test/게임%20맵%20최단거리.md) #BFS 
 - [짝지어 제거하기](notes/coding%20test/짝지어%20제거하기.md) #stack 
+- [큰 수 만들기](notes/coding%20test/큰%20수%20만들기.md) #stack 
   
 ### Level 3
 - [정수 삼각형](notes/coding%20test/정수%20삼각형.md)
