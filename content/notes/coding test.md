@@ -23,6 +23,8 @@ title: "👩‍💻 Coding Test"
 - [게임 맵 최단거리](notes/coding%20test/게임%20맵%20최단거리.md) #BFS 
 - [짝지어 제거하기](notes/coding%20test/짝지어%20제거하기.md) #stack 
 - [큰 수 만들기](notes/coding%20test/큰%20수%20만들기.md) #stack 
+- [전화번호 목록](notes/coding%20test/전화번호%20목록.md) #hash
+- [주차 요금 계산](notes/coding%20test/주차%20요금%20계산.md) #hash 
   
 ### Level 3
 - [정수 삼각형](notes/coding%20test/정수%20삼각형.md)
@@ -33,3 +35,8 @@ title: "👩‍💻 Coding Test"
   
 ### Basic
 - [Picking Numbers](notes/coding%20test/Picking%20Numbers.md)
+
+## Goorm
+
+### Level 2
+- [단어장 만들기](notes/coding%20test/단어장%20만들기.md)
