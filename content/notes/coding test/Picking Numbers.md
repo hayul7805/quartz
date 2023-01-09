@@ -47,73 +47,37 @@ The second line contains _n_ space-separated integers, each *a[i]* .
 
 We choose the following multiset of integers from the array: {4,3,3}. Each pair in the multiset has an absolute difference  <= 1(i.e., |4-1| = 1 and |3-3| = 0), so we print the number of chosen integers, 3, as our answer.
 
----
 ## 나의 풀이
 
 ```python
 import math
-
 import os
-
 import random
-
 import re
-
 import sys
-
 from collections import Counter
 
-#
-
-# Complete the 'pickingNumbers' function below.
-
-#
-
-# The function is expected to return an INTEGER.
-
-# The function accepts INTEGER_ARRAY a as parameter.
-
-#
-
-  
-
 def pickingNumbers(a):
-
-    # imput is un array of numbers.
-
+   
+ # imput is un array of numbers.
     count_nums = Counter(a)
-
     max_num = 0
-
+    
     for i in range(1, 100):
 
         max_num = max(max_num, 
 				  count_nums[i] + count_nums[i+1])
-
     return max_num
 
 if __name__ == '__main__':
-
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-  
-
+    
     n = int(input().strip())
-
-  
-
     a = list(map(int, input().rstrip().split()))
-
-  
-
+    
     result = pickingNumbers(a)
-
-  
-
+    
     fptr.write(str(result) + '\n')
-
-  
-
     fptr.close()
 ```
 
