@@ -44,17 +44,6 @@ tags :
 
 ## ML 문제 해결 순서
 
-
-```mermaid
-stateDiagram-v2
-	Data_distribution --> Models
-	Models --> Hyper_parameter_tuning
-	Models --> Cross_validation
-	Hyper_parameter_tuning --> Training
-	Cross_validation --> Training
-	Training --> Testing
-```
-
 1. [EDA & Visualization](notes/ml/EDA%20&%20Visualization.md)
 	1. 학습 데이터와 테스트 데이터의 분포가 동일한지 여부를 파악한다
 2. 활용할 모델 알고리즘들을 정한다
