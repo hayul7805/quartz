@@ -63,5 +63,9 @@ stateDiagram-v2
 5. 유의미한 결과가 나오는 알고리즘 및 Hyper parameter Case를 기반으로 학습 데이터 전체를 학습한다.
 6. 테스트 결과를 확인한다.
 
-## Examples
+## Techniques
 
+- [SMOTE](notes/ml/SMOTE.md)
+- [Recall and Precision](notes/ml/Recall%20and%20Precision.md)
+- [MAE and MSE](notes/ml/MAE%20and%20MSE.md)
+- [Sensitivity and Specificity](notes/ml/Sensitivity%20and%20Specificity.md)

@@ -9,8 +9,8 @@ tags :
 
 ### XGBoost의 특징
 
-- 병렬처리 가능
-- GPU지원이 가능
+- 병렬 처리 가능
+- GPU 지원이 가능
 - 추가적으로 **정규화 기능, Tree pruning 기능, Early Stopping, 내장된 교차검증과 결측치 처리** 등
 
 ### XGBoost의 대표적인 파라미터

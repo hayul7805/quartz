@@ -25,6 +25,11 @@ title: "👩‍💻 Coding Test"
 - [큰 수 만들기](notes/coding%20test/큰%20수%20만들기.md) #stack 
 - [전화번호 목록](notes/coding%20test/전화번호%20목록.md) #hash
 - [주차 요금 계산](notes/coding%20test/주차%20요금%20계산.md) #hash 
+- [전력망 둘로 나누기](notes/coding%20test/전력망%20둘로%20나누기.md) #BFS 
+- [줄 서는 방법](notes/coding%20test/줄%20서는%20방법.md)
+- [베스트앨범](notes/coding%20test/베스트앨범.md)
+- [캐시](notes/coding%20test/캐시.md) #Kakao 
+- [압축](notes/coding%20test/압축.md) #Kakao 
   
 ### Level 3
 - [정수 삼각형](notes/coding%20test/정수%20삼각형.md)
