@@ -9,9 +9,9 @@ enableToc: false
 
 ## Contents
 
-###  [👩‍💻 Coding Test](notes/coding%20test.md)
+### [👩‍💻 Coding Test](notes/coding%20test.md)
 ### [📚 Lectures](notes/Lectures.md)
-###  [📑 Paper Review](notes/paper-review.md)
+### [📑 Paper Review](notes/paper-review.md)
 ### [🗣 Talks](notes/Talks.md)
 ### [⚙️ Algorithms](notes/Algorithms.md)
 ### [🧭 Linear Algebra](notes/linear%20algebra/Linear%20Algebra.md)
