@@ -39,11 +39,11 @@ $$\mathrm{span}(\left \{\vec{v}_1,\vec{v}_2,\cdots,\vec{v}_r \right \})$$
 **Basis를 구성하는 vector의 수보다 많은 수의 vector들은 linearly dependent**이다. 예를 들어, basis가 $$ \{ \vec{e}_1, \vec{e}_2, \cdots , \vec{e}_n \} $$
 이라면, vector $\vec{v}_1,\vec{v}_2,\cdots,\vec{v}_n$ 은 각각이 basis vector의 linear combination
 
-$$\vec{v}\_i= \sum_{j=1}^n a_{ij} \vec{e}_j$$
+$$\vec{v}_i= \sum_{j=1}^n a_{ij} \vec{e}_j$$
 
 로 표현되고, 만약
 
-$$\vec{0}= \sum_{i=1}^{n+1} x_i \vec{v}\_i = \sum_{i=1}^{n+1} \sum_{j=1}^n x_i a_{ij} \vec{e}_j
+$$\vec{0}= \sum_{i=1}^{n+1} x_i \vec{v_i} = \sum_{i=1}^{n+1} \sum_{j=1}^n x_i a_{ij} \vec{e_j}
 $$
 이라면 basis의 정의에 따라,
 
