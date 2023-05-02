@@ -20,17 +20,17 @@ tags:
 
 ## FoCus Dataset
 
-![Figure 2: Example dialog between Human and Machine in FoCus dataset](Example-dialog.png)
+![Figure 2: Example dialog between Human and Machine in FoCus dataset](notes/images/Example-dialog.png)
 - 그래서 이런 대화가 가능하도록 하고 싶다는 것이다. 
 - 이용자와 대화를 진행하는 시스템이 실제 지식에 기반하면서('This place is called Sentosa'), 또한 이용자의 페르소나에 근거하여 말을 이어나가는 것('I believe you wish to visit Singapore.')!
 
 ## Model
 
-![](Overview-of-model.png)
+![](notes/images/Overview-of-model.png)
 > We introduce the baseline models trained on our FoCus dataset, consisting of a `retrieval module` and a `dialog module`. The `retrieval module` retrieves the knowledge paragraphs related to a question, and the `dialog module` generates utterances of the machine by taking the retrieved knowledge paragraphs, human’s persona, and previous utterances as inputs.
 - 그래서 모델 아키텍쳐에는 두 개의 모듈이 들어간다. `retrieval module` 과 `dialog module` 이다. `retrieval module` 은 질문과 관련된 지식 파라그래프를 검색하고, `dialog module` 은 이것과 이용자의 페르소나 정보에 근거해서 모델의 발화를 생성해내는 것이다.
 
-![Table 3: Experimental results](Experimental-results.png)
+![Table 3: Experimental results](notes/images/Experimental-results.png)
 - 실험 결과, PG, KG에 모두 훈련된 BART와 GPT-2가 generation에서는 조금 성능이 낮지만 전반적으로 비슷한 성능을 보여주며, Grouding 서브 태스크에서는 가장 뛰어난 성능을 보여주었다. 
 
 ## Conclusion

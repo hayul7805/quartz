@@ -11,4 +11,4 @@ tags :
 - 이 문제를 해결할 방법: **Top-p sampling**
 	- Sample from all tokens in **the top $p$ cumulative probability mass** (i.e., where mass is concentrated).
 	- Varies k depending on the uniformity of $P_t$.
-	  ![](스크린샷%202023-03-15%20오후%203.39.10.png)
+	  ![](notes/images/스크린샷%202023-03-15%20오후%203.39.10.png)

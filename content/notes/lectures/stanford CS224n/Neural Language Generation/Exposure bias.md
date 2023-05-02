@@ -8,7 +8,7 @@ tags :
 - During training, our model’s inputs are gold context tokens from real, human-generated texts.
   $$L_{MLE} = -logP(y_t^* | {\color{red}{y^*}_{<t}})$$
   - At generation time, our model’s inputs are previously–decoded tokens.
-	$$L_{dec} = -logP(\hat{y}_t | {\color{blue}\hat{y}_{<t}})$$![](스크린샷%202023-03-15%20오후%205.16.25.png)
+	$$L_{dec} = -logP(\hat{y}_t | {\color{blue}\hat{y}_{<t}})$$![](notes/images/스크린샷%202023-03-15%20오후%205.16.25.png)
 - **Exposure Bias Solutions**
 	- Scheduled sampling (Bengio et al., 2015)
 	- Dataset Aggregation (DAgger; Ross et al., 2011)
@@ -23,7 +23,7 @@ tags :
 			- Sample a sequence from your model
 			- Next time, increase the probability of this sampled token in the same context.
 			- …but do it more **if I get a high reward from the reward function**.
-			  $$L_{RL} = -\sum_{t=1}^T {\color{red}r(\hat{y_t})}logP(\hat{y}_t | y^*;{\color{blue}\{\hat{y_t}\}_{<t}})$$![](스크린샷%202023-03-15%20오후%205.22.42.png)
+			  $$L_{RL} = -\sum_{t=1}^T {\color{red}r(\hat{y_t})}logP(\hat{y}_t | y^*;{\color{blue}\{\hat{y_t}\}_{<t}})$$![](notes/images/스크린샷%202023-03-15%20오후%205.22.42.png)
 
 ---
 

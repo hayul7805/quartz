@@ -30,13 +30,13 @@ date : "2023-03-14"
 - **Maximum Likelihood Training** (i.e., [Teacher forcing](notes/lectures/stanford%20CS224n/Neural%20Language%20Generation/Teacher%20forcing.md))
 	- Trained to generate the next word $\color{blue}y_t^*$ given a set of preceding words $\color{red}\{y_{<t}^*\}$.
 	- 모델의 출력값이 다음 타임 스텝에 입력값으로 들어가는 방식.
-	  $$L = -\sum_{t=1} logP({\color{blue}y_t^*} | {\color{red}\{y_{<t}^*\}})$$![](스크린샷%202023-03-15%20오전%2012.26.09.png)
+	  $$L = -\sum_{t=1} logP({\color{blue}y_t^*} | {\color{red}\{y_{<t}^*\}})$$![](notes/images/스크린샷%202023-03-15%20오전%2012.26.09.png)
 
 ### Decoding from NLP models
 - Our decoding algorithm defines a function to select a token from this distribution:
   $${\hat{y_t}} = {\color{blue}g}(P(y_t|\{y_{<t}\})$$
 - 여기서 $g(\cdot)$ 이 decoding 알고리즘이다.
-  ![](스크린샷%202023-03-15%20오전%2012.30.34.png)
+  ![](notes/images/스크린샷%202023-03-15%20오전%2012.30.34.png)
 - **Greedy methods**
 	- ==Argmax Decoding== 
 		- Selects the highest probability token in $P(y_t|y_{<t})$
@@ -60,7 +60,7 @@ date : "2023-03-14"
 		- **Only sample from the top *k* tokens in the probability distribution**.
 		- Increase *k* for more **diverse/risky** outputs
 		- Decrease *k* for more **generic/safe** outputs
-		  ![](스크린샷%202023-03-15%20오후%203.32.22.png)
+		  ![](notes/images/스크린샷%202023-03-15%20오후%203.32.22.png)
 		- Top-k sampling can cut off *too quickly*!
 			- 각 토큰이 비슷한 확률 분포를 가지면 빠르게 cut-off 한다. 
 		- Top-k sampling can also cut off *too slowly*!
@@ -72,7 +72,7 @@ date : "2023-03-14"
 	- 이 문제를 해결할 방법: **Top-p sampling**
 		- Sample from all tokens in **the top $p$ cumulative probability mass** (i.e., where mass is concentrated).
 		- Varies k depending on the uniformity of $P_t$.
-		  ![](스크린샷%202023-03-15%20오후%203.39.10.png)
+		  ![](notes/images/스크린샷%202023-03-15%20오후%203.39.10.png)
   - Scaling **randomness**: ==[Softmax temperature](notes/lectures/stanford%20CS224n/Neural%20Language%20Generation/Softmax%20temperature.md)==
 	  - You can apply **a temperature hyperparameter $\tau$** to the softmax to rebalance $P_t$!
 	    $$P_t(y_t = w) = {{exp({\color{blue}S_w / \tau})} \over {\sum_{w'\in V} exp({\color{blue}S_{w'/ \tau}})}}$$
@@ -110,7 +110,7 @@ date : "2023-03-14"
 	- During training, our model’s inputs are gold context tokens from real, human-generated texts.
 	  $$L_{MLE} = -logP(y_t^* | {\color{red}{y^*}_{<t}})$$
 	  - At generation time, our model’s inputs are previously–decoded tokens.
-	    $$L_{dec} = -logP(\hat{y}_t | {\color{blue}\hat{y}_{<t}})$$![](스크린샷%202023-03-15%20오후%205.16.25.png)
+	    $$L_{dec} = -logP(\hat{y}_t | {\color{blue}\hat{y}_{<t}})$$![](notes/images/스크린샷%202023-03-15%20오후%205.16.25.png)
 	- **Exposure Bias Solutions**
 		- Scheduled sampling (Bengio et al., 2015)
 		- Dataset Aggregation (DAgger; Ross et al., 2011)
@@ -125,7 +125,7 @@ date : "2023-03-14"
 				- Sample a sequence from your model
 				- Next time, increase the probability of this sampled token in the same context.
 				- …but do it more **if I get a high reward from the reward function**.
-				  $$L_{RL} = -\sum_{t=1}^T {\color{red}r(\hat{y_t})}logP(\hat{y}_t | y^*;{\color{blue}\{\hat{y_t}\}_{<t}})$$![](스크린샷%202023-03-15%20오후%205.22.42.png)
+				  $$L_{RL} = -\sum_{t=1}^T {\color{red}r(\hat{y_t})}logP(\hat{y}_t | y^*;{\color{blue}\{\hat{y_t}\}_{<t}})$$![](notes/images/스크린샷%202023-03-15%20오후%205.22.42.png)
 			  - **Reward Estimation**
 				  - How should we define a reward function? Just use your evaluation metric!
 				  - **BLEU** (machine translation; Ranzato et al., ICLR 2016; Wu et al., 2016)

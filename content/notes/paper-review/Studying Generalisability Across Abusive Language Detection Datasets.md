@@ -35,12 +35,12 @@ title: "Studying Generalisability Across Abusive Language Detection Datasets"
 - 모델 하이퍼파라미터의 경우에는 이렇게 표현하면 된다.
 - 어라, 그런데 이거 보다보니 [On Cross-Dataset Generalization in Automatic Detection of Online Abuse](notes/paper-review/On%20Cross-Dataset%20Generalization%20in%20Automatic%20Detection%20of%20Online%20Abuse.md) 이랑 설명이 똑같다. 
 
-![Table 1: Overview of the datasets by Davidson et al., Founta et al., Waseem and Hovy, and Zampieri et al.](Datasets-overview.png)
+![Table 1: Overview of the datasets by Davidson et al., Founta et al., Waseem and Hovy, and Zampieri et al.](notes/images/Datasets-overview.png)
 - 전체 데이터셋의 개요는 위 그림과 같다. 
 
 ## Cross-Dataset Training and Testing
 
-![Table 4: Cross-dataset test results (accuracy and macro-F1)](Cross-dataset-test-results.png)
+![Table 4: Cross-dataset test results (accuracy and macro-F1)](notes/images/Cross-dataset-test-results.png)
 > Considerable performance drops can be observed when going from a large training dataset to a small test set (i.e., Founta et al.’s results when tested on the Waseem and Hovy dataset) and vice versa. This is in line with a similar conclusion by Karan and Šnajder(2018). 
 - 큰 데이터셋부터 작은 데이터셋으로 갈 때 퍼포먼스 하락이 보인다. 
 

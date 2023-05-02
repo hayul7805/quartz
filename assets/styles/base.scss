@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, thead {
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
-  font-size: 1.2rem; //이게 본문 폰트 크기
+  font-size: 1.0rem; //이게 본문 폰트 크기
   font-family: var(--font-body);
   color: var(--gray);
   fill: var(--gray);
@@ -266,7 +266,7 @@ sup > a {
 }
 
 a {
-  font-size: 1.2em;
+  font-size: 1.0em;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease;

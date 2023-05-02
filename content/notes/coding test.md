@@ -2,8 +2,7 @@
 title: "👩‍💻 Coding Test"
 ---
 
-## 프로그래머스 문제 모음
-  
+## 프로그래머스
 ### Level 1
 - [숫자 문자열과 영단어](notes/coding%20test/숫자%20문자열과%20영단어.md)
 - [키패드 누르기](notes/coding%20test/키패드%20누르기.md)
@@ -20,16 +19,16 @@ title: "👩‍💻 Coding Test"
 - [숫자 카드 나누기](notes/coding%20test/숫자%20카드%20나누기.md)
 - [스킬트리](notes/coding%20test/스킬트리.md)
 - [타겟 넘버](notes/coding%20test/타겟%20넘버.md)
-- [게임 맵 최단거리](notes/coding%20test/게임%20맵%20최단거리.md) #BFS 
-- [짝지어 제거하기](notes/coding%20test/짝지어%20제거하기.md) #stack 
-- [큰 수 만들기](notes/coding%20test/큰%20수%20만들기.md) #stack 
-- [전화번호 목록](notes/coding%20test/전화번호%20목록.md) #hash
-- [주차 요금 계산](notes/coding%20test/주차%20요금%20계산.md) #hash 
-- [전력망 둘로 나누기](notes/coding%20test/전력망%20둘로%20나누기.md) #BFS 
+- [게임 맵 최단거리](notes/coding%20test/게임%20맵%20최단거리.md)
+- [짝지어 제거하기](notes/coding%20test/짝지어%20제거하기.md)
+- [큰 수 만들기](notes/coding%20test/큰%20수%20만들기.md)
+- [전화번호 목록](notes/coding%20test/전화번호%20목록.md)
+- [주차 요금 계산](notes/coding%20test/주차%20요금%20계산.md)
+- [전력망 둘로 나누기](notes/coding%20test/전력망%20둘로%20나누기.md)
 - [줄 서는 방법](notes/coding%20test/줄%20서는%20방법.md)
 - [베스트앨범](notes/coding%20test/베스트앨범.md)
-- [캐시](notes/coding%20test/캐시.md) #Kakao 
-- [압축](notes/coding%20test/압축.md) #Kakao 
+- [캐시](notes/coding%20test/캐시.md)
+- [압축](notes/coding%20test/압축.md)
   
 ### Level 3
 - [정수 삼각형](notes/coding%20test/정수%20삼각형.md)
@@ -37,11 +36,9 @@ title: "👩‍💻 Coding Test"
   
 
 ## HackerRank
-  
 ### Basic
 - [Picking Numbers](notes/coding%20test/Picking%20Numbers.md)
 
 ## Goorm
-
 ### Level 2
 - [단어장 만들기](notes/coding%20test/단어장%20만들기.md)

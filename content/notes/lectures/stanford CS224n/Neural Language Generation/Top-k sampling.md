@@ -14,7 +14,7 @@ tags:
 	- **Only sample from the top *k* tokens in the probability distribution**.
 	- Increase *k* for more **diverse/risky** outputs
 	- Decrease *k* for more **generic/safe** outputs
-	  ![](스크린샷%202023-03-15%20오후%203.32.22.png)
+	  ![](notes/images/스크린샷%202023-03-15%20오후%203.32.22.png)
 	- Top-k sampling can cut off *too quickly*!
 		- 각 토큰이 비슷한 확률 분포를 가지면 빠르게 cut-off 한다. 
 	- Top-k sampling can also cut off *too slowly*!
